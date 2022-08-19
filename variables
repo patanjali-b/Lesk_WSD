@@ -1,0 +1,20 @@
+Hypothesis: I am assuming that words in a sentence are related to each other         
+            semantically acoording to their definitions from WordNet.
+            The reason for chosing senternce is:
+            1. It reduces the time complexity of running a loop over all the definitions of words with ambiguity.
+            2. Secondly, it is not a bad assumption because the updated model will also take into consideration the statisitcs of the occurrences of definitions and will go by the statistics in case of deficit of data to conclude.
+
+
+Statistical model: For the statistical model of words and it's meanings, I will store the word and the corresponding synset number, so that in case of ambiguity, I will chose the definition of that particular synset.
+            
+
+word_list       :  List of all words.
+list_stop       :  List of all NON stop words.
+possible_words  :  List of words with possible ambiguity.
+temp_words      :  List of temporary words in a sentence.
+sense_words     :  List of words in a sentence, with possible ambiguity.
+pos             :  List of pairs storing the pair of numbers corresponding to       
+                   highest path similarity. It basically is a Matrix.
+
+
+
